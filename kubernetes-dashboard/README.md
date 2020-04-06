@@ -2,6 +2,10 @@
 
 [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage applications running in the cluster and troubleshoot them, as well as manage the cluster itself.
 
+# Authentication by Github
+Oauth-proxy has been implemented in the helm chart for the purpose of secure and centralized Authentication via Github.
+
+
 ## TL;DR
 
 ```console
