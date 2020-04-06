@@ -7,7 +7,7 @@ metadata:
   name: dashboard-proxy
 spec:
   rules:
-  - host: dashboard.ops-work.net
+  - host: {{ .Values.endpoint }}
     http:
       paths:
       - backend:
@@ -16,5 +16,5 @@ spec:
         path: /
   tls:
   - hosts:
-    - dashboard.ops-work.net
+    - {{ .Values.endpoint }}
     secretName: dashboard-proxy-tls
